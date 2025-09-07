@@ -1,30 +1,46 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Scroll, Users, Heart, BookOpen, Star, Award } from "lucide-react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Scroll,
+  Users,
+  Heart,
+  BookOpen,
+  Star,
+  Award,
+  Clock,
+} from "lucide-react";
 import Layout from "@/components/Layout";
 import hadithIcon from "@/assets/hadith-icon.jpg";
 
 const HadithProgram = () => {
   const features = [
     {
-      icon: Scroll,
-      title: "Authentic Hadith",
-      description: "Carefully selected authentic sayings of Prophet Muhammad (PBUH)",
+      icon: BookOpen,
+      title: "At-tifl al-labiib",
+      description:
+        "Learn from our carefully curated hadith textbook designed for children",
     },
     {
-      icon: Heart,
-      title: "Character Building",
-      description: "Stories that teach kindness, honesty, and good manners",
+      icon: Clock,
+      title: "3-Month Program",
+      description:
+        "Comprehensive course covering essential hadith for children",
     },
     {
       icon: Users,
-      title: "Interactive Stories",
-      description: "Engaging storytelling that brings Islamic values to life",
+      title: "Limited Slots",
+      description: "Only 15 slots available for focused attention",
     },
     {
       icon: Award,
-      title: "Life Applications",
-      description: "Practical ways to implement Islamic teachings daily",
+      title: "Early Bird Discount",
+      description: "5% off for the first 5 enrollments",
     },
   ];
 
@@ -68,22 +84,41 @@ const HadithProgram = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden shadow-card">
-              <img src={hadithIcon} alt="Hadith Program" className="w-full h-full object-cover" />
+              <img
+                src={hadithIcon}
+                alt="Hadith Program"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-              Hadith Learning Program
-            </h1>
+            <div className="space-y-4">
+              <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+                3-Month Hadith Program
+              </h1>
+              <div className="flex items-center justify-center space-x-4">
+                <span className="px-4 py-1 bg-primary/10 rounded-full text-primary font-medium">
+                  Only 15 Slots
+                </span>
+                <span className="px-4 py-1 bg-primary/10 rounded-full text-primary font-medium">
+                  Early Bird Discount
+                </span>
+              </div>
+            </div>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Discover the beautiful teachings of Prophet Muhammad (PBUH) through engaging stories 
-              that build character and strengthen Islamic values in young hearts.
+              Learn authentic hadith from the book At-tifl al-labiib, specially
+              designed to build strong Islamic character in children through the
+              teachings of Prophet Muhammad (PBUH).
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="animate-gentle-bounce">
+              <Button
+                variant="hero"
+                size="lg"
+                className="animate-gentle-bounce"
+              >
                 <Scroll className="w-5 h-5 mr-2" />
-                Enroll in Hadith Program
+                Reserve Your Slot Now
               </Button>
               <Button variant="outline" size="lg">
-                View Sample Stories
+                Download Course Details
               </Button>
             </div>
           </div>
@@ -98,13 +133,17 @@ const HadithProgram = () => {
               Learning Through Beautiful Stories
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We make Hadith learning engaging and memorable for children through interactive storytelling
+              We make Hadith learning engaging and memorable for children
+              through interactive storytelling
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1">
+              <Card
+                key={index}
+                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+              >
                 <CardHeader>
                   <div className="w-16 h-16 mx-auto bg-accent-coral rounded-2xl flex items-center justify-center mb-4">
                     <feature.icon className="w-8 h-8 text-primary" />
@@ -112,7 +151,9 @@ const HadithProgram = () => {
                   <CardTitle className="text-lg">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{feature.description}</CardDescription>
+                  <CardDescription className="text-base">
+                    {feature.description}
+                  </CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -134,7 +175,10 @@ const HadithProgram = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {topics.map((topic, index) => (
-              <Card key={index} className="hover:shadow-card transition-all duration-300 hover:-translate-y-1">
+              <Card
+                key={index}
+                className="hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+              >
                 <CardHeader>
                   <div className="flex items-center space-x-3">
                     <span className="text-3xl">{topic.icon}</span>
@@ -142,7 +186,9 @@ const HadithProgram = () => {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">{topic.description}</CardDescription>
+                  <CardDescription className="text-base">
+                    {topic.description}
+                  </CardDescription>
                 </CardContent>
               </Card>
             ))}
@@ -160,9 +206,12 @@ const HadithProgram = () => {
                   <div className="w-24 h-24 mx-auto bg-background rounded-2xl flex items-center justify-center shadow-soft">
                     <Scroll className="w-12 h-12 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold text-foreground">Story-Based Learning</h3>
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Story-Based Learning
+                  </h3>
                   <p className="text-muted-foreground px-8">
-                    Making Islamic teachings memorable through engaging narratives
+                    Making Islamic teachings memorable through engaging
+                    narratives
                   </p>
                 </div>
               </div>
@@ -173,39 +222,52 @@ const HadithProgram = () => {
                 Our Child-Friendly Approach
               </h2>
               <p className="text-lg text-muted-foreground">
-                We understand that children learn best through stories and examples. Our Hadith program 
-                uses age-appropriate narratives to teach profound Islamic values in ways children can 
-                understand and remember.
+                We understand that children learn best through stories and
+                examples. Our Hadith program uses age-appropriate narratives to
+                teach profound Islamic values in ways children can understand
+                and remember.
               </p>
-              
+
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Star className="w-3 h-3 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Interactive Storytelling</h4>
-                    <p className="text-muted-foreground">Engaging narratives with visual aids and activities</p>
+                    <h4 className="font-semibold text-foreground">
+                      Interactive Storytelling
+                    </h4>
+                    <p className="text-muted-foreground">
+                      Engaging narratives with visual aids and activities
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Heart className="w-3 h-3 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Character Development</h4>
-                    <p className="text-muted-foreground">Focus on building beautiful Islamic manners</p>
+                    <h4 className="font-semibold text-foreground">
+                      Character Development
+                    </h4>
+                    <p className="text-muted-foreground">
+                      Focus on building beautiful Islamic manners
+                    </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start space-x-3">
                   <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <BookOpen className="w-3 h-3 text-primary-foreground" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Practical Application</h4>
-                    <p className="text-muted-foreground">Real-life examples children can relate to and practice</p>
+                    <h4 className="font-semibold text-foreground">
+                      Practical Application
+                    </h4>
+                    <p className="text-muted-foreground">
+                      Real-life examples children can relate to and practice
+                    </p>
                   </div>
                 </div>
               </div>
@@ -219,50 +281,59 @@ const HadithProgram = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Pricing Section */}
       <section className="py-20 bg-accent-blue/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-12">
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                Why Hadith Education Matters
+                Program Details & Pricing
               </h2>
               <p className="text-lg text-muted-foreground">
-                The sayings and actions of Prophet Muhammad (PBUH) provide the perfect example 
-                for how to live as good Muslims and good human beings.
+                Join our 3-month Hadith learning journey with the At-tifl
+                al-labiib curriculum
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center">
-                  <Heart className="w-8 h-8 text-primary" />
+            <Card className="max-w-lg mx-auto hover:shadow-card transition-all duration-300">
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-2xl">
+                  3-Month Hadith Program
+                </CardTitle>
+                <div className="mt-4">
+                  <span className="text-4xl font-bold text-primary">$100</span>
+                  <span className="text-muted-foreground">/month</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">Moral Foundation</h3>
-                <p className="text-muted-foreground">
-                  Building strong ethical values based on Islamic teachings
-                </p>
-              </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>At-tifl al-labiib textbook included</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Interactive weekly classes</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>Only 15 slots available</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                    <span>5% discount for first 5 enrollments</span>
+                  </div>
+                </div>
+                <Button variant="program" className="w-full mt-6">
+                  <Scroll className="w-5 h-5 mr-2" />
+                  Reserve Your Slot Now
+                </Button>
+              </CardContent>
+            </Card>
 
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-accent-yellow rounded-2xl flex items-center justify-center">
-                  <Users className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground">Social Skills</h3>
-                <p className="text-muted-foreground">
-                  Learning how to interact kindly and respectfully with others
-                </p>
-              </div>
-
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 mx-auto bg-accent-coral rounded-2xl flex items-center justify-center">
-                  <Award className="w-8 h-8 text-primary" />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground">Character Building</h3>
-                <p className="text-muted-foreground">
-                  Developing honesty, kindness, and other beautiful qualities
-                </p>
-              </div>
+            <div className="text-sm text-muted-foreground">
+              * Limited time offer. Early bird discount applies to the first 5
+              enrollments only.
             </div>
           </div>
         </div>
@@ -273,19 +344,23 @@ const HadithProgram = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">
-              Help Your Child Follow the Best Example
+              Limited Time Opportunity
             </h2>
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-              Give your child the gift of learning from the most beautiful character - Prophet Muhammad (PBUH). 
-              Start their journey of character development today.
+              Only 15 slots available for our upcoming batch. Secure your
+              child's spot today and benefit from our early bird discount.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg" className="shadow-gold">
                 <Scroll className="w-5 h-5 mr-2" />
-                Begin Hadith Journey
+                Enroll Now
               </Button>
-              <Button variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                Schedule Consultation
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              >
+                Request Information
               </Button>
             </div>
           </div>
