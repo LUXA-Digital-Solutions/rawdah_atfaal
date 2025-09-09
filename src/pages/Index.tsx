@@ -51,18 +51,21 @@ const Index = () => {
 
   const testimonials = [
     {
-      name: "Fatima Al-Zahra",
-      text: "My daughter Aisha loves her Qur'an classes! She's memorized 3 surahs already and asks when the next class is. The teachers are so patient and kind.",
+      name: "Umm Firdaus",
+      location: "Belgium",
+      text: "I am very satisfied with your accessibility, willingness to help, and flexibility. You go above and beyond to assist, offering Arabic, Aqeedah, Quran, and more. I would definitely recommend signing your kids up for these courses.",
       rating: 5,
     },
     {
-      name: "Ahmad Hassan",
-      text: "The Hadith program has helped my son understand Islamic values better. He now practices what he learns and shows more respect and kindness.",
+      name: "Umm Abibaki",
+      location: "Ghana",
+      text: "Markazul Bayaan is one of the best Quranic institutes I have ever come across. Their teachers have patience which makes learning easy. The class is fixed to suit your schedule. It has deepened my Islamic knowledge.",
       rating: 5,
     },
     {
-      name: "Maryam Ibrahim",
-      text: "Rawdah has been a blessing for our family. Both my children are enrolled and love their classes. Highly recommend to all Muslim parents!",
+      name: "Sister Iqra Kareem",
+      location: "India",
+      text: "I took Islamic studies, Arabic speaking, and Quran classes for my daughter. The teacher was patient and dedicated. I really saw an improvement in my daughter's memorization in less than a month.",
       rating: 5,
     },
   ];
@@ -85,17 +88,29 @@ const Index = () => {
                 heart.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  variant="hero"
-                  size="lg"
-                  className="animate-gentle-bounce"
+                <a
+                  href="https://bit.ly/rawdah-director"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <BookOpen className="w-5 h-5 mr-2" />
-                  Explore Our Programs
-                </Button>
-                <Button variant="outline" size="lg">
-                  Book Free Consultation
-                </Button>
+                  <Button
+                    variant="hero"
+                    size="lg"
+                    className="animate-gentle-bounce"
+                  >
+                    <BookOpen className="w-5 h-5 mr-2" />
+                    Enroll now
+                  </Button>
+                </a>
+                <a
+                  href="https://calendly.com/markazulbayaan9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" size="lg">
+                    Book Free Consultation
+                  </Button>
+                </a>
               </div>
             </div>
 

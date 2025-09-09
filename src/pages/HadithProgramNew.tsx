@@ -19,6 +19,27 @@ import Layout from "@/components/Layout";
 import hadithIcon from "@/assets/hadith-icon.jpg";
 
 const HadithProgram = () => {
+  const testimonials = [
+    {
+      name: "Umm Firdaus",
+      location: "Belgium",
+      text: "I am very satisfied with your accessibility, willingness to help, and flexibility. You go above and beyond to assist, offering Arabic, Aqeedah, Quran, and more. I would definitely recommend signing your kids up for these courses.",
+      rating: 5,
+    },
+    {
+      name: "Umm Abibaki",
+      location: "Ghana",
+      text: "Markazul Bayaan is one of the best Quranic institutes I have ever come across. Their teachers have patience which makes learning easy. The class is fixed to suit your schedule. It has deepened my Islamic knowledge.",
+      rating: 5,
+    },
+    {
+      name: "Sister Iqra Kareem",
+      location: "India",
+      text: "I took Islamic studies, Arabic speaking, and Quran classes for my daughter. The teacher was patient and dedicated. I really saw an improvement in my daughter's memorization in less than a month.",
+      rating: 5,
+    },
+  ];
+
   const features = [
     {
       icon: BookOpen,
@@ -109,29 +130,17 @@ const HadithProgram = () => {
               teachings of Prophet Muhammad (PBUH).
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://bit.ly/rawdah-director"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Button
+                variant="hero"
+                size="lg"
+                className="animate-gentle-bounce"
               >
-                <Button
-                  variant="hero"
-                  size="lg"
-                  className="animate-gentle-bounce"
-                >
-                  <Scroll className="w-5 h-5 mr-2" />
-                  Reserve Your Slot Now
-                </Button>
-              </a>
-              <a
-                href="https://calendly.com/markazulbayaan9"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="outline" size="lg">
-                  Book Free Consultation
-                </Button>
-              </a>
+                <Scroll className="w-5 h-5 mr-2" />
+                Reserve Your Slot Now
+              </Button>
+              <Button variant="outline" size="lg">
+                Download Course Details
+              </Button>
             </div>
           </div>
         </div>
@@ -200,6 +209,53 @@ const HadithProgram = () => {
                   <CardDescription className="text-base">
                     {topic.description}
                   </CardDescription>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              What Parents Are Saying
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Real experiences from our wonderful community
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <Card
+                key={index}
+                className="hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+              >
+                <CardHeader>
+                  <div className="flex items-center space-x-1 mb-2">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-gold fill-current"
+                      />
+                    ))}
+                  </div>
+                  <CardDescription className="text-base text-foreground italic">
+                    "{testimonial.text}"
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-1">
+                    <div className="font-semibold text-primary">
+                      {testimonial.name}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {testimonial.location}
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -281,17 +337,10 @@ const HadithProgram = () => {
               </div>
             </div>
 
-            <a
-              href="https://bit.ly/rawdah-director"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <Button variant="program" size="lg" className="mt-8">
-                <Scroll className="w-5 h-5 mr-2" />
-                Start Learning Hadith
-              </Button>
-            </a>
+            <Button variant="program" size="lg" className="mt-8">
+              <Scroll className="w-5 h-5 mr-2" />
+              Start Learning Hadith
+            </Button>
           </div>
         </div>
       </section>
@@ -438,16 +487,10 @@ const HadithProgram = () => {
               child's spot today and benefit from our early bird discount.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://bit.ly/rawdah-director"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button variant="secondary" size="lg" className="shadow-gold">
-                  <Scroll className="w-5 h-5 mr-2" />
-                  Enroll Now
-                </Button>
-              </a>
+              <Button variant="secondary" size="lg" className="shadow-gold">
+                <Scroll className="w-5 h-5 mr-2" />
+                Enroll Now
+              </Button>
               <Button
                 variant="outline"
                 size="lg"

@@ -98,17 +98,29 @@ const QuranProgram = () => {
               method in small, interactive classes with expert teachers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                variant="hero"
-                size="lg"
-                className="animate-gentle-bounce"
+              <a
+                href="https://calendly.com/markazulbayaan9"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <BookOpen className="w-5 h-5 mr-2" />
-                Schedule Free Assessment
-              </Button>
-              <Button variant="outline" size="lg">
-                Download Syllabus
-              </Button>
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="animate-gentle-bounce"
+                >
+                  <BookOpen className="w-5 h-5 mr-2" />
+                  Schedule Free Assessment
+                </Button>
+              </a>
+              <a
+                href="https://bit.ly/rawdah-director"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="lg">
+                  Download Syllabus
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -277,10 +289,16 @@ const QuranProgram = () => {
                 </div>
               </div>
 
-              <Button variant="program" size="lg" className="mt-8">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Begin Assessment
-              </Button>
+              <a
+                href="https://calendly.com/markazulbayaan9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="program" size="lg" className="mt-8">
+                  <BookOpen className="w-5 h-5 mr-2" />
+                  Begin Assessment
+                </Button>
+              </a>
             </div>
 
             <div className="relative">
@@ -322,6 +340,134 @@ const QuranProgram = () => {
           </div>
         </div>
       </section>
+      {/* Pricing Section */}
+      <section className="py-20 bg-gradient-warm">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center space-y-12">
+            <div className="space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+                Choose Your Payment Plan
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Flexible options for your child's Quranic journey.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Monthly Plan */}
+              <Card className="relative hover:shadow-card transition-all duration-300 hover:-translate-y-1">
+                <CardHeader className="text-center pb-4 space-y-4">
+                  <CardTitle className="text-2xl">Monthly Plan</CardTitle>
+                  <div className="flex items-center justify-center space-x-3">
+                    <div className="px-3 py-1 bg-primary/10 rounded-full">
+                      <span className="text-sm font-medium text-primary">
+                        Ongoing
+                      </span>
+                    </div>
+                    <div className="px-3 py-1 bg-primary/10 rounded-full">
+                      <span className="text-sm font-medium text-primary">
+                        Flexible
+                      </span>
+                    </div>
+                  </div>
+                  <div className="pt-4">
+                    <span className="text-4xl font-bold text-primary">
+                      $150
+                    </span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Qāʿidah Nūrāniyyah textbook provided</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>3 classes per week, 45 minutes each</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Small group classes (max 3 students)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Progress tracking and assessments</span>
+                    </div>
+                  </div>
+                  <div className="pt-4">
+                    <Button variant="outline" className="w-full">
+                      <BookOpen className="w-5 h-5 mr-2" />
+                      Choose Monthly
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* 5-Month Package */}
+              <Card className="relative hover:shadow-card transition-all duration-300 hover:-translate-y-1 border-2 border-primary">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-medium">
+                    Best Value
+                  </span>
+                </div>
+                <CardHeader className="text-center pb-4 space-y-4">
+                  <CardTitle className="text-2xl">5-Month Package</CardTitle>
+                  <div className="flex items-center justify-center space-x-3">
+                    <div className="px-3 py-1 bg-primary/10 rounded-full">
+                      <span className="text-sm font-medium text-primary">
+                        5 Months
+                      </span>
+                    </div>
+                    <div className="px-3 py-1 bg-primary/10 rounded-full">
+                      <span className="text-sm font-medium text-primary">
+                        Save Money
+                      </span>
+                    </div>
+                  </div>
+                  <div className="pt-4">
+                    <span className="text-4xl font-bold text-primary">
+                      $700
+                    </span>
+                    <span className="text-muted-foreground"> total</span>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-6">
+                  <div className="space-y-3">
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Qāʿidah Nūrāniyyah textbook provided</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>3 classes per week, 45 minutes each</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Small group classes (max 3 students)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Certification upon completion</span>
+                    </div>
+                  </div>
+                  <div className="pt-4">
+                    <Button variant="program" className="w-full">
+                      <BookOpen className="w-5 h-5 mr-2" />
+                      Get Started Now
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-sm text-muted-foreground">
+              * All packages include access to digital learning resources
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-islamic">
@@ -336,10 +482,16 @@ const QuranProgram = () => {
               maximum 3 students per teacher.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg" className="shadow-gold">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Schedule Assessment
-              </Button>
+              <a
+                href="https://calendly.com/markazulbayaan9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="secondary" size="lg" className="shadow-gold">
+                  <BookOpen className="w-5 h-5 mr-2" />
+                  Schedule Assessment
+                </Button>
+              </a>
               <Button
                 variant="outline"
                 size="lg"

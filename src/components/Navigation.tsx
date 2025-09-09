@@ -15,9 +15,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-islamic rounded-xl flex items-center justify-center shadow-soft">
-              <BookOpen className="w-6 h-6 text-primary-foreground" />
-            </div>
+            <img
+              src="/src/assets/rawdah_logo2.jpg"
+              alt="Rawdah Logo"
+              className="w-10 h-10 rounded-xl shadow-soft"
+            />
             <span className="text-2xl font-bold text-primary">Rawdah</span>
           </Link>
 
@@ -62,7 +64,11 @@ const Navigation = () => {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </Button>
           </div>
         </div>
@@ -98,7 +104,11 @@ const Navigation = () => {
               </Button>
             </Link>
             <div className="pt-4">
-              <Button variant="hero" className="w-full" onClick={() => setIsOpen(false)}>
+              <Button
+                variant="hero"
+                className="w-full"
+                onClick={() => setIsOpen(false)}
+              >
                 Enroll Now
               </Button>
             </div>
