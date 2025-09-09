@@ -386,7 +386,7 @@ const HadithProgram = () => {
                     <span className="text-4xl font-bold text-primary">
                       $400
                     </span>
-                    <span className="text-muted-foreground"> one-time</span>
+                    <span className="text-muted-foreground"> for 3 months</span>
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -418,6 +418,58 @@ const HadithProgram = () => {
               </Card>
             </div>
 
+            {/* Special Discounts */}
+            <div className="text-center space-y-6">
+              <h3 className="text-2xl font-bold text-foreground">
+                Special Discounts
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <Card className="hover:shadow-card transition-all duration-300">
+                  <CardHeader className="text-center">
+                    <div className="w-12 h-12 mx-auto bg-accent-coral rounded-2xl flex items-center justify-center mb-4">
+                      <Users className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-lg">Multiple Students</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <p className="text-2xl font-bold text-primary">5% OFF</p>
+                    <p className="text-muted-foreground">
+                      For 2 or more students
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-card transition-all duration-300">
+                  <CardHeader className="text-center">
+                    <div className="w-12 h-12 mx-auto bg-accent-coral rounded-2xl flex items-center justify-center mb-4">
+                      <Award className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-lg">Pay in Full</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <p className="text-2xl font-bold text-primary">5% OFF</p>
+                    <p className="text-muted-foreground">
+                      One-time payment discount
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-card transition-all duration-300">
+                  <CardHeader className="text-center">
+                    <div className="w-12 h-12 mx-auto bg-accent-coral rounded-2xl flex items-center justify-center mb-4">
+                      <BookOpen className="w-6 h-6 text-primary" />
+                    </div>
+                    <CardTitle className="text-lg">Both Programs</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-center">
+                    <p className="text-2xl font-bold text-primary">10% OFF</p>
+                    <p className="text-muted-foreground">
+                      Quran + Hadith combined
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
             <div className="text-sm text-muted-foreground">
               * Early bird discount of 5% available for the first 5 enrollments
               only
