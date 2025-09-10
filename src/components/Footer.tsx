@@ -82,7 +82,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
-                Schedule Consultation
+                Schedule Trial
               </a>
               <a
                 href="https://bit.ly/rawdah-director"
@@ -108,10 +108,6 @@ const Footer = () => {
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-primary" />
                 <span>+2348089287065</span>
-              </div>
-              <div className="flex items-center space-x-3 text-muted-foreground">
-                <Phone className="w-5 h-5 text-primary" />
-                <span>+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-primary" />

@@ -14,19 +14,19 @@ const QuranProgram = () => {
   const features = [
     {
       icon: BookOpen,
-      title: "Qāʿidah Nūrāniyyah",
+      title: "Qāʿidah Nūrāniyyah/Noorul Bayaan",
       description: "Master Quranic reading with a proven step-by-step method",
     },
     {
       icon: Users,
-      title: "Small Group Classes",
+      title: "One-on-One Classes",
       description:
-        "Maximum of 3 students per teacher for personalized attention",
+        "Personalized learning with dedicated attention from your teacher.",
     },
     {
       icon: Clock,
       title: "Structured Learning",
-      description: "3 classes per week, 45 minutes each for optimal progress",
+      description: "3 classes per week, 40 minutes each for optimal progress",
     },
     {
       icon: Award,
@@ -39,7 +39,8 @@ const QuranProgram = () => {
     {
       number: "01",
       title: "Foundation",
-      description: "Master Qāʿidah Nūrāniyyah basics and proper pronunciation",
+      description:
+        "Master Qāʿidah Nūrāniyyah/Noorul Bayaan basics and proper pronunciation",
     },
     {
       number: "02",
@@ -58,24 +59,24 @@ const QuranProgram = () => {
     },
   ];
 
-  const ageGroups = [
-    {
-      age: "4-6 years",
-      focus: "Basic Recognition",
-      description:
-        "Introduction to Arabic letters and basic sounds through fun activities",
-    },
-    {
-      age: "7-10 years",
-      focus: "Core Learning",
-      description: "Systematic Qāʿidah study and beginning Quran recitation",
-    },
-    {
-      age: "11-15 years",
-      focus: "Advanced Progress",
-      description: "Advanced tajweed rules and memorization techniques",
-    },
-  ];
+  // const ageGroups = [
+  //   {
+  //     age: "4-6 years",
+  //     focus: "Basic Recognition",
+  //     description:
+  //       "Introduction to Arabic letters and basic sounds through fun activities",
+  //   },
+  //   {
+  //     age: "7-10 years",
+  //     focus: "Core Learning",
+  //     description: "Systematic Qāʿidah study and beginning Quran recitation",
+  //   },
+  //   {
+  //     age: "11-15 years",
+  //     focus: "Advanced Progress",
+  //     description: "Advanced tajweed rules and memorization techniques",
+  //   },
+  // ];
 
   return (
     <Layout>
@@ -94,9 +95,9 @@ const QuranProgram = () => {
               Rawdatul Atfaal Qur'an Program
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Master Quranic recitation with the proven Qāʿidah Nūrāniyyah
-              method in small, interactive classes with expert teachers. We
-              teach based on authentic Islamic teachings and give great
+              Master Quranic recitation with the proven Qāʿidah Nūrāniyyah/Fathu
+              Rahman method in small, interactive classes with expert teachers.
+              We teach based on authentic Islamic teachings and give great
               importance to correct creed and methodology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -111,7 +112,7 @@ const QuranProgram = () => {
                   className="animate-gentle-bounce"
                 >
                   <BookOpen className="w-5 h-5 mr-2" />
-                  Schedule Free Assessment
+                  Schedule Free Trial
                 </Button>
               </a>
               <a
@@ -199,7 +200,7 @@ const QuranProgram = () => {
       </section>
 
       {/* Age Groups Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -232,7 +233,7 @@ const QuranProgram = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
       <section className="py-20 bg-muted">
@@ -243,10 +244,11 @@ const QuranProgram = () => {
                 Our Teaching Methodology
               </h2>
               <p className="text-lg text-muted-foreground">
-                We use the proven Qāʿidah Nūrāniyyah method combined with modern
-                teaching techniques to ensure effective learning and proper
-                Quranic recitation. Our approach is rooted in authentic Islamic
-                teachings with great emphasis on correct creed and methodology.
+                We use the proven Qāʿidah Nūrāniyyah/Noorul Bayaan method
+                combined with modern teaching techniques to ensure effective
+                learning and proper Quranic recitation. Our approach is rooted
+                in authentic Islamic teachings with great emphasis on correct
+                creed and methodology.
               </p>
 
               <div className="space-y-4">
@@ -300,7 +302,7 @@ const QuranProgram = () => {
               >
                 <Button variant="program" size="lg" className="mt-8">
                   <BookOpen className="w-5 h-5 mr-2" />
-                  Begin Assessment
+                  Begin Trial
                 </Button>
               </a>
             </div>
@@ -314,7 +316,7 @@ const QuranProgram = () => {
                     </div>
                     <p className="text-muted-foreground">3 classes per week</p>
                     <p className="text-muted-foreground">
-                      45 minutes per class
+                      40 minutes per class
                     </p>
                   </div>
 
@@ -323,7 +325,7 @@ const QuranProgram = () => {
                       Class Size
                     </div>
                     <p className="text-muted-foreground">
-                      Maximum 3 students per teacher
+                      Maximum 1 student per teacher
                     </p>
                   </div>
 
@@ -332,7 +334,7 @@ const QuranProgram = () => {
                       Learning Materials
                     </div>
                     <p className="text-muted-foreground">
-                      Qāʿidah Nūrāniyyah book provided
+                      Qāʿidah Nūrāniyyah/Noorul Bayaan book
                     </p>
                     <p className="text-muted-foreground">
                       Digital learning resources
@@ -344,6 +346,7 @@ const QuranProgram = () => {
           </div>
         </div>
       </section>
+
       {/* Pricing Section */}
       <section className="py-20 bg-gradient-warm">
         <div className="container mx-auto px-4">
@@ -385,19 +388,23 @@ const QuranProgram = () => {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span>Qāʿidah Nūrāniyyah textbook provided</span>
+                      <span>Qāʿidah Nūrāniyyah/Noorul Bayaan textbook</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span>3 classes per week, 45 minutes each</span>
+                      <span>3 classes per week, 40 minutes each</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span>Small group classes (max 3 students)</span>
+                      <span>One-on-One Classes</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
                       <span>Progress tracking and assessments</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Certification upon completion</span>
                     </div>
                   </div>
                   <div className="pt-4">
@@ -426,7 +433,7 @@ const QuranProgram = () => {
                     </div>
                     <div className="px-3 py-1 bg-primary/10 rounded-full">
                       <span className="text-sm font-medium text-primary">
-                        Save Money
+                        Save $50
                       </span>
                     </div>
                   </div>
@@ -441,15 +448,19 @@ const QuranProgram = () => {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span>Qāʿidah Nūrāniyyah textbook provided</span>
+                      <span>Qāʿidah Nūrāniyyah/Noorul Bayaan textbook</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span>3 classes per week, 45 minutes each</span>
+                      <span>3 classes per week, 40 minutes each</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                      <span>Small group classes (max 3 students)</span>
+                      <span>One-on-One Classes</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Progress tracking and assessments</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
@@ -533,9 +544,9 @@ const QuranProgram = () => {
               Begin Your Child's Quranic Journey
             </h2>
             <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-              Our structured program with the Qāʿidah Nūrāniyyah method ensures
-              proper Quranic reading and understanding. Three classes per week,
-              maximum 3 students per teacher.
+              Our structured program with the Qāʿidah Nūrāniyyah/Noorul Bayaan
+              method ensures proper Quranic reading and understanding. Three
+              classes per week, maximum 1 student per teacher.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -545,13 +556,13 @@ const QuranProgram = () => {
               >
                 <Button variant="secondary" size="lg" className="shadow-gold">
                   <BookOpen className="w-5 h-5 mr-2" />
-                  Schedule Assessment
+                  Schedule Trial
                 </Button>
               </a>
               <Button
                 variant="outline"
                 size="lg"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
               >
                 View Class Schedule
               </Button>

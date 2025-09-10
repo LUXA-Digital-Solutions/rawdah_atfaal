@@ -47,39 +47,39 @@ const About = () => {
     },
   ];
 
-  const team = [
-    {
-      name: "Ustadh Ahmad",
-      role: "Founder & Lead Instructor",
-      qualifications:
-        "Masters in Islamic Studies, 15+ years teaching experience",
-      image: "/src/assets/teacher1.jpg",
-      description:
-        "Specializes in Quranic recitation and Islamic jurisprudence with a passion for child-centered learning.",
-    },
-    {
-      name: "Ustadha Fatima",
-      role: "Hadith Specialist",
-      qualifications: "PhD in Hadith Sciences, Certified Islamic Educator",
-      image: "/src/assets/teacher2.jpg",
-      description:
-        "Expert in Hadith authentication and child-friendly storytelling methods.",
-    },
-    {
-      name: "Ustadh Khalid",
-      role: "Arabic Language Instructor",
-      qualifications: "Native Arabic speaker, Masters in Arabic Linguistics",
-      image: "/src/assets/teacher3.jpg",
-      description:
-        "Focuses on proper pronunciation and Arabic language acquisition for children.",
-    },
-  ];
+  // const team = [
+  //   {
+  //     name: "Ustadh Ahmad",
+  //     role: "Founder & Lead Instructor",
+  //     qualifications:
+  //       "Masters in Islamic Studies, 15+ years teaching experience",
+  //     image: "/src/assets/teacher1.jpg",
+  //     description:
+  //       "Specializes in Quranic recitation and Islamic jurisprudence with a passion for child-centered learning.",
+  //   },
+  //   {
+  //     name: "Ustadha Fatima",
+  //     role: "Hadith Specialist",
+  //     qualifications: "PhD in Hadith Sciences, Certified Islamic Educator",
+  //     image: "/src/assets/teacher2.jpg",
+  //     description:
+  //       "Expert in Hadith authentication and child-friendly storytelling methods.",
+  //   },
+  //   {
+  //     name: "Ustadh Khalid",
+  //     role: "Arabic Language Instructor",
+  //     qualifications: "Native Arabic speaker, Masters in Arabic Linguistics",
+  //     image: "/src/assets/teacher3.jpg",
+  //     description:
+  //       "Focuses on proper pronunciation and Arabic language acquisition for children.",
+  //   },
+  // ];
 
   const stats = [
     { number: "500+", label: "Happy Students" },
-    { number: "50+", label: "Countries Reached" },
-    { number: "15+", label: "Years Experience" },
-    { number: "98%", label: "Parent Satisfaction" },
+    { number: "10+", label: "Countries Reached" },
+    { number: "7+", label: "Years Experience" },
+    { number: "90%", label: "Parent Satisfaction" },
   ];
 
   return (
@@ -93,7 +93,7 @@ const About = () => {
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Dedicated to providing authentic Islamic education with love,
-              compassion, and excellence since 2009. We follow the methodologies
+              compassion, and excellence since 2021. We follow the methodologies
               of the pious predecessors and teach based on the pure creed and
               teachings of Quran and Sunnah.
             </p>
@@ -115,10 +115,10 @@ const About = () => {
                 </div>
                 <p className="text-lg text-muted-foreground">
                   To nurture young hearts and minds with authentic Islamic
-                  knowledge, fostering spiritual growth, moral character, and
-                  academic excellence in a loving, child-friendly environment.
-                  We are people upon the Sunnah, teaching based on the
-                  methodologies of the pious predecessors of the Ummah.
+                  knowledge, fostering sound belief, spiritual growth, moral
+                  character, and academic excellence in a loving, child-friendly
+                  environment. We are people upon the Sunnah, teaching based on
+                  the methodologies of the pious predecessors of the Ummah.
                 </p>
               </div>
 
@@ -217,7 +217,7 @@ const About = () => {
       </section>
 
       {/* Our Team */}
-      <section className="py-20 bg-muted">
+      {/* <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -256,7 +256,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-islamic">
@@ -280,7 +280,7 @@ const About = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
                 >
                   <BookOpen className="w-5 h-5 mr-2" />
                   Explore Programs

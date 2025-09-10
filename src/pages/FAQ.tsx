@@ -41,7 +41,7 @@ const FAQ = () => {
       {
         question: "What are the age requirements for enrollment?",
         answer:
-          "Our programs are designed for children aged 4-15 years. We have age-appropriate curriculum for different developmental stages: 4-6 years (Basic Recognition), 7-10 years (Core Learning), and 11-15 years (Advanced Progress).",
+          "Our programs are designed for children aged 4-15 years. We have age-appropriate curriculum for different developmental stages.",
       },
       {
         question: "Do I need prior Islamic knowledge for my child to enroll?",
@@ -51,7 +51,7 @@ const FAQ = () => {
       {
         question: "How do I enroll my child in a program?",
         answer:
-          "Enrollment is simple: 1) Contact us for a free assessment, 2) Choose your preferred program and payment plan, 3) Complete the enrollment form, 4) Receive login credentials for classes. The entire process takes less than 24 hours.",
+          "Enrollment is simple: 1) Contact us for a free assessment, 2) Choose your preferred program and payment plan, 3) Complete the enrollment form, 4) Receive necessary credentials for classes. The entire process takes less than 30 minutes.",
       },
       {
         question: "Can I enroll multiple children?",
@@ -61,14 +61,14 @@ const FAQ = () => {
       {
         question: "What if my child misses a class?",
         answer:
-          "We record all classes and provide access to recordings within 24 hours. Students can catch up at their own pace, and our instructors are available for additional support.",
+          "If a student has a genuine reason for missing a class and informs us at least one hour before, we provide a make-up class to ensure they don’t fall behind. Our instructors are always available for additional support.",
       },
     ],
     curriculum: [
       {
         question: "What methodology do you use for Quranic teaching?",
         answer:
-          "We use the proven Qāʿidah Nūrāniyyah method for Quranic reading, combined with modern teaching techniques. This systematic approach ensures proper pronunciation (Tajweed) and understanding.",
+          "We use the proven Qāʿidah Nūrāniyyah/Fathu Rahman method for Quranic reading, combined with modern teaching techniques. This systematic approach ensures proper pronunciation (Tajweed) and understanding.",
       },
       {
         question: "How is the Hadith program structured?",
@@ -78,7 +78,7 @@ const FAQ = () => {
       {
         question: "Do you provide learning materials?",
         answer:
-          "Yes! All required textbooks, workbooks, and digital resources are included in your tuition. Physical books are shipped to your address, and digital materials are accessible through our student portal.",
+          "Yes! All required digital textbooks, workbooks, and other digital resources are included in your tuition.",
       },
       {
         question: "How do you assess student progress?",
@@ -95,7 +95,7 @@ const FAQ = () => {
       {
         question: "What payment methods do you accept?",
         answer:
-          "We accept bank transfers, credit/debit cards, PayPal, and mobile money payments. All major currencies are supported, and we provide secure payment processing.",
+          "We accept bank transfers as well as trusted online platforms like Sendwave, Remitly, and others. Payments can be made in major currencies, and we ensure secure and reliable processing for your convenience.",
       },
       {
         question: "Are there payment plans available?",
@@ -105,12 +105,17 @@ const FAQ = () => {
       {
         question: "What is your refund policy?",
         answer:
-          "We offer a 7-day money-back guarantee for new enrollments. If you're not satisfied with our program, you can request a full refund within the first week. Partial refunds are available on a case-by-case basis.",
+          "We do not offer refunds. However, we provide a free trial class before enrollment so you can experience our program and ensure it’s the right fit for your child.",
       },
       {
         question: "Do you offer financial assistance or scholarships?",
         answer:
-          "Yes, we have a limited number of need-based scholarships and payment assistance programs. Contact our enrollment team to discuss your situation and available options.",
+          "At the moment, we do not offer scholarships or financial assistance programs. We truly value making our classes accessible and hope to introduce such options in the future, in shaa’ Allah.",
+      },
+      {
+        question: "Can I sponsor a student’s education?",
+        answer:
+          "Yes, we warmly welcome anyone who wishes to sponsor free education for students in need. Your support can help spread knowledge and benefit others. Please contact us if you are interested in sponsoring, and we will guide you through the process.",
       },
       {
         question: "When are payments due?",
@@ -122,7 +127,7 @@ const FAQ = () => {
       {
         question: "How long are the classes?",
         answer:
-          "Each class is 45 minutes long, designed to maintain children's attention while providing comprehensive learning. This includes instruction, practice, and interactive activities.",
+          "Each class is 40 minutes long, designed to maintain children's attention while providing comprehensive learning. This includes instruction, practice, and interactive activities.",
       },
       {
         question: "How many classes per week?",
@@ -132,12 +137,12 @@ const FAQ = () => {
       {
         question: "What is the class size?",
         answer:
-          "Maximum of 3 students per instructor ensures personalized attention. This small group setting allows for individual feedback and interactive learning.",
+          "Maximum of 1 student per instructor ensures personalized attention. This allows for strong feedback and interactive learning.",
       },
       {
         question: "Are classes recorded?",
         answer:
-          "Yes, all classes are recorded and available within 24 hours. Students can review lessons, and parents can monitor their child's progress. Recordings are available for the duration of enrollment.",
+          "Yes, all classes are recorded with the parent's permission. Students can review lessons, and parents can monitor their child's progress. Recordings are available for the duration of enrollment.",
       },
       {
         question: "What if I need to reschedule a class?",
@@ -333,7 +338,7 @@ const FAQ = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Ages 4-15 years old</li>
+                    <li>• Ages 4-20 years old</li>
                     <li>• Internet connection</li>
                     <li>• Computer/tablet with camera</li>
                     <li>• No prior Islamic knowledge required</li>
@@ -353,7 +358,7 @@ const FAQ = () => {
                     <li>• Multiple payment options available</li>
                     <li>• Flexible payment plans</li>
                     <li>• Family discounts for multiple children</li>
-                    <li>• 7-day money-back guarantee</li>
+                    <li>• No refund after payment</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -368,7 +373,7 @@ const FAQ = () => {
                 <CardContent>
                   <ul className="space-y-2 text-sm text-muted-foreground">
                     <li>• 3 classes per week</li>
-                    <li>• 45 minutes per class</li>
+                    <li>• 40 minutes per class</li>
                     <li>• Recorded sessions available</li>
                     <li>• Flexible rescheduling options</li>
                   </ul>
@@ -384,8 +389,7 @@ const FAQ = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li>• Maximum 3 students per class</li>
-                    <li>• Individual attention guaranteed</li>
+                    <li>• Maximum of 1 student per class</li>
                     <li>• Progress tracking and reports</li>
                     <li>• Parent-teacher communication</li>
                   </ul>

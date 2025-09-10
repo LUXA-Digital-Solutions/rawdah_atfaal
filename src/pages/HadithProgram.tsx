@@ -106,9 +106,9 @@ const HadithProgram = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Learn authentic hadith from the book At-tifl al-labiib, specially
               designed to build strong Islamic character in children through the
-              teachings of Prophet Muhammad, peace and blessings of Allah be
-              upon him. We teach based on authentic Islamic teachings and give
-              great importance to correct creed and methodology.
+              teachings of Prophet Muhammad ﷺ. We teach based on authentic
+              Islamic teachings and give great importance to correct creed and
+              methodology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -131,7 +131,7 @@ const HadithProgram = () => {
                 rel="noopener noreferrer"
               >
                 <Button variant="outline" size="lg">
-                  Book Free Consultation
+                  Book Free Trial
                 </Button>
               </a>
             </div>
@@ -508,7 +508,7 @@ const HadithProgram = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
               >
                 Request Information
               </Button>

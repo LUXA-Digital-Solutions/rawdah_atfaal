@@ -42,7 +42,7 @@ const Teachers = () => {
       rating: 4.9,
       students: 500,
       description:
-        "Ustadh Ahmad brings over 15 years of experience in teaching Quran with the traditional Qāʿidah Nūrāniyyah method. His passion for Islamic education and child-centered approach has helped hundreds of students develop a deep connection with the Quran.",
+        "Ustadh Ahmad brings over 15 years of experience in teaching Quran with the traditional Qāʿidah Nūrāniyyah/Fathu Rahman method. His passion for Islamic education and child-centered approach has helped hundreds of students develop a deep connection with the Quran.",
       achievements: [
         "Trained 500+ students in proper Quranic recitation",
         "Developed customized curriculum for different age groups",
