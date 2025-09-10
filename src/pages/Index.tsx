@@ -186,7 +186,7 @@ const Index = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="space-y-3">
+                <div className="space-y-3 pb-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span className="text-foreground">
@@ -232,17 +232,17 @@ const Index = () => {
                   Hadith Learning Program
                 </CardTitle>
                 <CardDescription className="text-base text-muted-foreground">
-                  Character building through beautiful teachings of Prophet
-                  Muhammad, peace and blessings of Allah be upon him, following
-                  the understanding of the Salaf
+                  Nurturing character through the beautiful teachings of Prophet
+                  Muhammad ﷺ, upon the sound ʿAqeedah and worship (‘Ibaadah) as
+                  understood by the Salaf.
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
-                <div className="space-y-3">
+                <div className="space-y-3 pb-4">
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span className="text-foreground">
-                      Authentic Hadith stories
+                      Authentic Hadith from At-tifl al-labiib
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -254,7 +254,7 @@ const Index = () => {
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-primary rounded-full"></div>
                     <span className="text-foreground">
-                      Interactive storytelling
+                      Interactive and engaging lessons
                     </span>
                   </div>
                 </div>
