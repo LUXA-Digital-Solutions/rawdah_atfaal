@@ -97,7 +97,7 @@ const Index = () => {
                   <Button
                     variant="hero"
                     size="lg"
-                    className="animate-gentle-bounce"
+                    className="animate-gentle-bounce hover:animate-pulse"
                   >
                     <BookOpen className="w-5 h-5 mr-2" />
                     Enroll now
@@ -115,34 +115,43 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="w-full h-96 lg:h-[500px] rounded-3xl overflow-hidden bg-gradient-to-tr p-8">
+            <div
+              className="relative animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
+              {/* Decorative floating elements */}
+              <div className="absolute top-8 left-8 w-16 h-16 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute bottom-12 right-12 w-20 h-20 bg-accent-coral/15 rounded-full blur-2xl animate-bounce"></div>
+              <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-accent-yellow/20 rounded-full blur-lg animate-ping"></div>
+
+              <div className="w-full h-96 lg:h-[500px] rounded-3xl overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30 backdrop-blur-md border border-white/30 shadow-2xl p-8 relative">
                 <div className="w-full h-full flex flex-col md:flex-row items-center justify-center gap-8">
-                  <div className="flex-1 space-y-8">
-                    <div className="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center">
-                      <BookOpen className="w-12 h-12 text-primary" />
+                  <div className="flex-1 space-y-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div className="w-28 h-28 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl flex items-center justify-center shadow-inner">
+                      <BookOpen className="w-14 h-14 text-primary drop-shadow-lg" />
                     </div>
                     <div className="text-black">
-                      <h3 className="text-2xl font-bold mb-2">
+                      <h3 className="text-2xl font-bold mb-3 text-foreground">
                         Quranic Learning
                       </h3>
-                      <p className="opacity-90">
+                      <p className="opacity-90 text-muted-foreground leading-relaxed">
                         Mastering Tajweed and understanding the divine words
                       </p>
                     </div>
                   </div>
 
-                  <div className="w-px h-48 bg-primary/20 hidden md:block"></div>
+                  {/* Modern divider */}
+                  <div className="hidden md:block w-1 h-48 bg-gradient-to-b from-primary/40 via-primary/20 to-primary/40 rounded-full shadow-lg"></div>
 
-                  <div className="flex-1 space-y-8">
-                    <div className="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center">
-                      <Scroll className="w-12 h-12 text-primary" />
+                  <div className="flex-1 space-y-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div className="w-28 h-28 bg-gradient-to-br from-accent-coral/20 to-accent-yellow/10 rounded-3xl flex items-center justify-center shadow-inner">
+                      <Scroll className="w-14 h-14 text-primary drop-shadow-lg" />
                     </div>
                     <div className="text-black">
-                      <h3 className="text-2xl font-bold mb-2">
+                      <h3 className="text-2xl font-bold mb-3 text-foreground">
                         Hadith Studies
                       </h3>
-                      <p className="opacity-90">
+                      <p className="opacity-90 text-muted-foreground leading-relaxed">
                         Building knowledge through authentic teachings
                       </p>
                     </div>
@@ -157,7 +166,10 @@ const Index = () => {
       {/* Programs Overview */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "0.4s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Our Islamic Education Programs
             </h2>
@@ -168,7 +180,10 @@ const Index = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Qur'an Program Card */}
-            <Card className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-primary-soft to-accent-blue">
+            <Card
+              className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-primary-soft to-accent-blue animate-fade-up"
+              style={{ animationDelay: "0.6s" }}
+            >
               <CardHeader className="text-center pb-6">
                 <div className="w-20 h-20 mx-auto rounded-2xl overflow-hidden shadow-soft mb-4">
                   <img
@@ -219,7 +234,10 @@ const Index = () => {
             </Card>
 
             {/* Hadith Program Card */}
-            <Card className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-accent-coral to-accent-yellow">
+            <Card
+              className="group hover:shadow-card transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-accent-coral to-accent-yellow animate-fade-up"
+              style={{ animationDelay: "0.8s" }}
+            >
               <CardHeader className="text-center pb-6">
                 <div className="w-20 h-20 mx-auto rounded-2xl overflow-hidden shadow-soft mb-4">
                   <img
@@ -276,7 +294,10 @@ const Index = () => {
       {/* Why Rawdah Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Why Choose Rawdah?
             </h2>
@@ -291,7 +312,8 @@ const Index = () => {
             {benefits.map((benefit, index) => (
               <Card
                 key={index}
-                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${1.2 + index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
@@ -313,7 +335,10 @@ const Index = () => {
       {/* Testimonials */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               What Parents Are Saying
             </h2>
@@ -327,7 +352,8 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${1.8 + index * 0.2}s` }}
               >
                 <CardHeader>
                   <div className="flex items-center space-x-1 mb-2">
@@ -356,7 +382,10 @@ const Index = () => {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-islamic">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div
+            className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up"
+            style={{ animationDelay: "2.2s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">
               Start Your Child's Learning Journey Today
             </h2>

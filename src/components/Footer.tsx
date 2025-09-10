@@ -35,25 +35,25 @@ const Footer = () => {
             <div className="space-y-2">
               <Link
                 to="/"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 About Us
               </Link>
               <Link
                 to="/quran"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 Qur'an Program
               </Link>
               <Link
                 to="/hadith"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 Hadith Program
               </Link>
@@ -66,13 +66,13 @@ const Footer = () => {
             <div className="space-y-2">
               <Link
                 to="/faq"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 FAQ
               </Link>
               <Link
                 to="/contact"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 Contact Us
               </Link>
@@ -80,7 +80,7 @@ const Footer = () => {
                 href="https://calendly.com/markazulbayaan9"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 Schedule Trial
               </a>
@@ -88,7 +88,7 @@ const Footer = () => {
                 href="https://bit.ly/rawdah-director"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-muted-foreground hover:text-primary transition-colors"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
               >
                 Enrollment
               </a>

@@ -83,24 +83,36 @@ const QuranProgram = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden shadow-card">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
+            <div
+              className="w-24 h-24 mx-auto rounded-2xl overflow-hidden shadow-card animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               <img
                 src={quranIcon}
                 alt="Qur'an Program"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground">
+            <h1
+              className="text-4xl md:text-6xl font-bold text-foreground animate-fade-up"
+              style={{ animationDelay: "0.4s" }}
+            >
               Rawdatul Atfaal Qur'an Program
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p
+              className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up"
+              style={{ animationDelay: "0.6s" }}
+            >
               Master Quranic recitation with the proven Qāʿidah Nūrāniyyah/Fathu
               Rahman method in small, interactive classes with expert teachers.
               We teach based on authentic Islamic teachings and give great
               importance to correct creed and methodology.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
+              style={{ animationDelay: "0.8s" }}
+            >
               <a
                 href="https://calendly.com/markazulbayaan9"
                 target="_blank"
@@ -109,7 +121,7 @@ const QuranProgram = () => {
                 <Button
                   variant="hero"
                   size="lg"
-                  className="animate-gentle-bounce"
+                  className="animate-gentle-bounce hover:animate-pulse"
                 >
                   <BookOpen className="w-5 h-5 mr-2" />
                   Schedule Free Trial
@@ -132,7 +144,10 @@ const QuranProgram = () => {
       {/* Features Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Why Choose Our Qur'an Program?
             </h2>
@@ -147,7 +162,8 @@ const QuranProgram = () => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${1.2 + index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
@@ -169,7 +185,10 @@ const QuranProgram = () => {
       {/* Learning Process */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Our Learning Process
             </h2>
@@ -180,7 +199,11 @@ const QuranProgram = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
-              <div key={index} className="relative">
+              <div
+                key={index}
+                className="relative animate-fade-up"
+                style={{ animationDelay: `${1.8 + index * 0.2}s` }}
+              >
                 <div className="bg-background rounded-2xl p-6 shadow-card hover:shadow-lg transition-all duration-300">
                   <div className="text-4xl font-bold text-primary mb-4">
                     {step.number}
@@ -239,7 +262,10 @@ const QuranProgram = () => {
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <div
+              className="space-y-6 animate-fade-up"
+              style={{ animationDelay: "2.2s" }}
+            >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                 Our Teaching Methodology
               </h2>
@@ -307,7 +333,10 @@ const QuranProgram = () => {
               </a>
             </div>
 
-            <div className="relative">
+            <div
+              className="relative animate-fade-up"
+              style={{ animationDelay: "2.4s" }}
+            >
               <div className="w-full h-96 bg-gradient-warm rounded-3xl p-8 shadow-card">
                 <div className="h-full flex flex-col justify-center space-y-6">
                   <div className="space-y-2">
@@ -539,7 +568,10 @@ const QuranProgram = () => {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-islamic">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div
+            className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up"
+            style={{ animationDelay: "2.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">
               Begin Your Child's Quranic Journey
             </h2>

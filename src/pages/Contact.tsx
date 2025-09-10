@@ -46,7 +46,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               Contact Us
             </h1>
@@ -61,7 +61,10 @@ const Contact = () => {
       {/* Contact Methods */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Get in Touch
             </h2>
@@ -75,7 +78,8 @@ const Contact = () => {
             {contactMethods.map((method, index) => (
               <Card
                 key={index}
-                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${0.4 + index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
@@ -103,7 +107,10 @@ const Contact = () => {
       {/* FAQ Preview */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div
+            className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up"
+            style={{ animationDelay: "0.8s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Frequently Asked Questions
             </h2>
@@ -112,7 +119,10 @@ const Contact = () => {
               common questions.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="text-left">
+              <Card
+                className="text-left animate-fade-up"
+                style={{ animationDelay: "1s" }}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg">Enrollment Process</CardTitle>
                 </CardHeader>
@@ -124,7 +134,10 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card className="text-left">
+              <Card
+                className="text-left animate-fade-up"
+                style={{ animationDelay: "1.2s" }}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg">Payment & Fees</CardTitle>
                 </CardHeader>
@@ -136,7 +149,12 @@ const Contact = () => {
                 </CardContent>
               </Card>
             </div>
-            <Button variant="outline" size="lg">
+            <Button
+              variant="outline"
+              size="lg"
+              className="animate-fade-up"
+              style={{ animationDelay: "1.4s" }}
+            >
               View All FAQs
             </Button>
           </div>

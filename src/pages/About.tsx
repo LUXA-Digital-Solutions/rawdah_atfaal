@@ -87,7 +87,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               About Rawdah Education
             </h1>
@@ -105,7 +105,10 @@ const About = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <div
+              className="space-y-6 animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Target className="w-8 h-8 text-primary" />
@@ -138,7 +141,10 @@ const About = () => {
               </div>
             </div>
 
-            <div className="relative">
+            <div
+              className="relative animate-fade-up"
+              style={{ animationDelay: "0.4s" }}
+            >
               <div className="w-full h-96 bg-gradient-warm rounded-3xl flex items-center justify-center shadow-card">
                 <div className="text-center space-y-4 p-8">
                   <GraduationCap className="w-16 h-16 text-primary mx-auto" />
@@ -159,7 +165,10 @@ const About = () => {
       {/* Our Values */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "0.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Our Core Values
             </h2>
@@ -172,7 +181,8 @@ const About = () => {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${0.8 + index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
@@ -194,7 +204,10 @@ const About = () => {
       {/* Statistics */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1.2s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Our Impact
             </h2>
@@ -205,7 +218,11 @@ const About = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
+              <div
+                key={index}
+                className="text-center animate-fade-up"
+                style={{ animationDelay: `${1.4 + index * 0.1}s` }}
+              >
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
                   {stat.number}
                 </div>
@@ -261,7 +278,10 @@ const About = () => {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-islamic">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div
+            className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up"
+            style={{ animationDelay: "1.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">
               Ready to Join Our Community?
             </h2>

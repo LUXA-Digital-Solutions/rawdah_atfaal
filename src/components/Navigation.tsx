@@ -38,7 +38,7 @@ const Navigation = () => {
             <Link to="/">
               <Button
                 variant={isActive("/") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <Home className="w-4 h-4" />
                 <span>Home</span>
@@ -47,7 +47,7 @@ const Navigation = () => {
             <Link to="/about">
               <Button
                 variant={isActive("/about") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <Info className="w-4 h-4" />
                 <span>About</span>
@@ -56,7 +56,7 @@ const Navigation = () => {
             {/* <Link to="/teachers">
               <Button
                 variant={isActive("/teachers") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <GraduationCap className="w-4 h-4" />
                 <span>Teachers</span>
@@ -65,7 +65,7 @@ const Navigation = () => {
             <Link to="/quran">
               <Button
                 variant={isActive("/quran") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <BookOpen className="w-4 h-4" />
                 <span>Qur'an Program</span>
@@ -74,7 +74,7 @@ const Navigation = () => {
             <Link to="/hadith">
               <Button
                 variant={isActive("/hadith") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <Users className="w-4 h-4" />
                 <span>Hadith Program</span>
@@ -83,7 +83,7 @@ const Navigation = () => {
             <Link to="/faq">
               <Button
                 variant={isActive("/faq") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <HelpCircle className="w-4 h-4" />
                 <span>FAQ</span>
@@ -92,7 +92,7 @@ const Navigation = () => {
             <Link to="/contact">
               <Button
                 variant={isActive("/contact") ? "soft" : "ghost"}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
               >
                 <Phone className="w-4 h-4" />
                 <span>Contact</span>
@@ -125,7 +125,7 @@ const Navigation = () => {
             <Link to="/" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <Home className="w-4 h-4 mr-2" />
                 Home
@@ -134,7 +134,7 @@ const Navigation = () => {
             <Link to="/about" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/about") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <Info className="w-4 h-4 mr-2" />
                 About
@@ -143,7 +143,7 @@ const Navigation = () => {
             <Link to="/teachers" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/teachers") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <GraduationCap className="w-4 h-4 mr-2" />
                 Teachers
@@ -152,7 +152,7 @@ const Navigation = () => {
             <Link to="/quran" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/quran") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <BookOpen className="w-4 h-4 mr-2" />
                 Qur'an Program
@@ -161,7 +161,7 @@ const Navigation = () => {
             <Link to="/hadith" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/hadith") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <Users className="w-4 h-4 mr-2" />
                 Hadith Program
@@ -170,7 +170,7 @@ const Navigation = () => {
             <Link to="/faq" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/faq") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <HelpCircle className="w-4 h-4 mr-2" />
                 FAQ
@@ -179,7 +179,7 @@ const Navigation = () => {
             <Link to="/contact" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/contact") ? "soft" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
               >
                 <Phone className="w-4 h-4 mr-2" />
                 Contact

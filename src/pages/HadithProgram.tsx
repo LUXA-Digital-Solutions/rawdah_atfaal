@@ -82,15 +82,21 @@ const HadithProgram = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <div className="w-24 h-24 mx-auto rounded-2xl overflow-hidden shadow-card">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
+            <div
+              className="w-24 h-24 mx-auto rounded-2xl overflow-hidden shadow-card animate-fade-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               <img
                 src={hadithIcon}
                 alt="Hadith Program"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="space-y-4">
+            <div
+              className="space-y-4 animate-fade-up"
+              style={{ animationDelay: "0.4s" }}
+            >
               <h1 className="text-4xl md:text-6xl font-bold text-foreground">
                 3-Month Hadith Program
               </h1>
@@ -103,14 +109,20 @@ const HadithProgram = () => {
                 </span>
               </div>
             </div>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p
+              className="text-xl text-muted-foreground max-w-2xl mx-auto animate-fade-up"
+              style={{ animationDelay: "0.6s" }}
+            >
               Learn authentic hadith from the book At-tifl al-labiib, specially
               designed to build strong Islamic character in children through the
               teachings of Prophet Muhammad ﷺ. We teach based on authentic
               Islamic teachings and give great importance to correct creed and
               methodology.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div
+              className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up"
+              style={{ animationDelay: "0.8s" }}
+            >
               <a
                 href="https://bit.ly/rawdah-director"
                 target="_blank"
@@ -119,7 +131,7 @@ const HadithProgram = () => {
                 <Button
                   variant="hero"
                   size="lg"
-                  className="animate-gentle-bounce"
+                  className="animate-gentle-bounce hover:animate-pulse"
                 >
                   <Scroll className="w-5 h-5 mr-2" />
                   Reserve Your Slot Now
@@ -142,7 +154,10 @@ const HadithProgram = () => {
       {/* Features Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Program Highlights
             </h2>
@@ -157,7 +172,8 @@ const HadithProgram = () => {
             {features.map((feature, index) => (
               <Card
                 key={index}
-                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="text-center hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${1.2 + index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="w-16 h-16 mx-auto bg-accent-coral rounded-2xl flex items-center justify-center mb-4">
@@ -179,7 +195,10 @@ const HadithProgram = () => {
       {/* Topics Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Course Curriculum
             </h2>
@@ -192,7 +211,8 @@ const HadithProgram = () => {
             {topics.map((topic, index) => (
               <Card
                 key={index}
-                className="hover:shadow-card transition-all duration-300 hover:-translate-y-1"
+                className="hover:shadow-card transition-all duration-300 hover:-translate-y-1 animate-fade-up"
+                style={{ animationDelay: `${1.8 + index * 0.1}s` }}
               >
                 <CardHeader>
                   <div className="flex items-center space-x-3">
@@ -214,7 +234,10 @@ const HadithProgram = () => {
       {/* Teaching Method */}
       <section className="py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
+          <div
+            className="relative animate-fade-up"
+            style={{ animationDelay: "2.2s" }}
+          >
             <div className="w-full h-96 bg-gradient-warm rounded-3xl flex items-center justify-center shadow-card">
               <div className="text-center space-y-4">
                 <div className="w-24 h-24 mx-auto bg-background rounded-2xl flex items-center justify-center shadow-soft">
@@ -230,7 +253,10 @@ const HadithProgram = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div
+            className="space-y-6 animate-fade-up"
+            style={{ animationDelay: "2.4s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Our Child-Friendly Approach
             </h2>
@@ -486,7 +512,10 @@ const HadithProgram = () => {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-islamic">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div
+            className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up"
+            style={{ animationDelay: "2.6s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">
               Limited Time Opportunity
             </h2>

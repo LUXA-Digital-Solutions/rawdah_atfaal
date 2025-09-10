@@ -184,7 +184,7 @@ const FAQ = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
+          <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-up">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
               Frequently Asked Questions
             </h1>
@@ -199,7 +199,10 @@ const FAQ = () => {
       {/* FAQ Categories */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "0.2s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Browse by Category
             </h2>
@@ -208,13 +211,17 @@ const FAQ = () => {
             </p>
           </div>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
+          <div
+            className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            {categories.map((category, index) => (
               <Button
                 key={category.id}
                 variant={activeCategory === category.id ? "default" : "outline"}
                 onClick={() => setActiveCategory(category.id)}
-                className="flex items-center space-x-2"
+                className="flex items-center space-x-2 animate-fade-up"
+                style={{ animationDelay: `${0.6 + index * 0.1}s` }}
               >
                 <category.icon className="w-4 h-4" />
                 <span>{category.label}</span>
@@ -223,13 +230,17 @@ const FAQ = () => {
           </div>
 
           {/* FAQ Accordion */}
-          <div className="max-w-4xl mx-auto">
+          <div
+            className="max-w-4xl mx-auto animate-fade-up"
+            style={{ animationDelay: "0.8s" }}
+          >
             <Accordion type="single" collapsible className="space-y-4">
               {faqs[activeCategory as keyof typeof faqs].map((faq, index) => (
                 <AccordionItem
                   key={index}
                   value={`item-${index}`}
-                  className="border border-border rounded-lg px-6"
+                  className="border border-border rounded-lg px-6 animate-fade-up"
+                  style={{ animationDelay: `${1 + index * 0.05}s` }}
                 >
                   <AccordionTrigger className="text-left hover:no-underline">
                     <span className="font-medium text-foreground">
@@ -249,7 +260,10 @@ const FAQ = () => {
       {/* Quick Help Cards */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="text-center space-y-4 mb-16">
+          <div
+            className="text-center space-y-4 mb-16 animate-fade-up"
+            style={{ animationDelay: "1.2s" }}
+          >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground">
               Still Need Help?
             </h2>
@@ -259,7 +273,10 @@ const FAQ = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <Card className="text-center hover:shadow-card transition-all duration-300">
+            <Card
+              className="text-center hover:shadow-card transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: "1.4s" }}
+            >
               <CardHeader>
                 <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
                   <MessageSquare className="w-8 h-8 text-primary" />
@@ -276,7 +293,10 @@ const FAQ = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-card transition-all duration-300">
+            <Card
+              className="text-center hover:shadow-card transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: "1.6s" }}
+            >
               <CardHeader>
                 <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
                   <HelpCircle className="w-8 h-8 text-primary" />
@@ -295,7 +315,10 @@ const FAQ = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center hover:shadow-card transition-all duration-300">
+            <Card
+              className="text-center hover:shadow-card transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: "1.8s" }}
+            >
               <CardHeader>
                 <div className="w-16 h-16 mx-auto bg-primary-soft rounded-2xl flex items-center justify-center mb-4">
                   <Clock className="w-8 h-8 text-primary" />
@@ -319,7 +342,10 @@ const FAQ = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center space-y-4 mb-12">
+            <div
+              className="text-center space-y-4 mb-12 animate-fade-up"
+              style={{ animationDelay: "2s" }}
+            >
               <h2 className="text-3xl md:text-4xl font-bold text-foreground">
                 Popular Topics
               </h2>
@@ -329,7 +355,10 @@ const FAQ = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card>
+              <Card
+                className="animate-fade-up"
+                style={{ animationDelay: "2.2s" }}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <BookOpen className="w-5 h-5 mr-2 text-primary" />
@@ -346,7 +375,10 @@ const FAQ = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card
+                className="animate-fade-up"
+                style={{ animationDelay: "2.4s" }}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <CreditCard className="w-5 h-5 mr-2 text-primary" />
@@ -363,7 +395,10 @@ const FAQ = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card
+                className="animate-fade-up"
+                style={{ animationDelay: "2.6s" }}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <Clock className="w-5 h-5 mr-2 text-primary" />
@@ -380,7 +415,10 @@ const FAQ = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card
+                className="animate-fade-up"
+                style={{ animationDelay: "2.8s" }}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <Users className="w-5 h-5 mr-2 text-primary" />
