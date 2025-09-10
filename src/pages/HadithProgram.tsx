@@ -106,7 +106,9 @@ const HadithProgram = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Learn authentic hadith from the book At-tifl al-labiib, specially
               designed to build strong Islamic character in children through the
-              teachings of Prophet Muhammad (PBUH).
+              teachings of Prophet Muhammad, peace and blessings of Allah be
+              upon him. We teach based on authentic Islamic teachings and give
+              great importance to correct creed and methodology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -145,7 +147,9 @@ const HadithProgram = () => {
               Program Highlights
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive hadith program designed specifically for children
+              A comprehensive hadith program designed specifically for children,
+              based on authentic Islamic teachings with emphasis on correct
+              creed and methodology
             </p>
           </div>
 
@@ -234,7 +238,8 @@ const HadithProgram = () => {
               We understand that children learn best through stories and
               examples. Our Hadith program uses age-appropriate narratives to
               teach profound Islamic values in ways children can understand and
-              remember.
+              remember, while maintaining authentic Islamic teachings and
+              correct methodology.
             </p>
 
             <div className="space-y-4">

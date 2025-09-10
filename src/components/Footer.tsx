@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-muted border-t border-border">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -40,6 +40,12 @@ const Footer = () => {
                 Home
               </Link>
               <Link
+                to="/about"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                About Us
+              </Link>
+              <Link
                 to="/quran"
                 className="block text-muted-foreground hover:text-primary transition-colors"
               >
@@ -51,6 +57,41 @@ const Footer = () => {
               >
                 Hadith Program
               </Link>
+            </div>
+          </div>
+
+          {/* Support */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-foreground">Support</h3>
+            <div className="space-y-2">
+              <Link
+                to="/faq"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                FAQ
+              </Link>
+              <Link
+                to="/contact"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                Contact Us
+              </Link>
+              <a
+                href="https://calendly.com/markazulbayaan9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                Schedule Consultation
+              </a>
+              <a
+                href="https://bit.ly/rawdah-director"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-primary transition-colors"
+              >
+                Enrollment
+              </a>
             </div>
           </div>
 

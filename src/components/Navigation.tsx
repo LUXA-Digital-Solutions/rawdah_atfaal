@@ -1,6 +1,16 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, BookOpen, Users, Home } from "lucide-react";
+import {
+  Menu,
+  X,
+  BookOpen,
+  Users,
+  Home,
+  Info,
+  Phone,
+  HelpCircle,
+  GraduationCap,
+} from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
@@ -34,6 +44,24 @@ const Navigation = () => {
                 <span>Home</span>
               </Button>
             </Link>
+            <Link to="/about">
+              <Button
+                variant={isActive("/about") ? "soft" : "ghost"}
+                className="flex items-center space-x-2"
+              >
+                <Info className="w-4 h-4" />
+                <span>About</span>
+              </Button>
+            </Link>
+            {/* <Link to="/teachers">
+              <Button
+                variant={isActive("/teachers") ? "soft" : "ghost"}
+                className="flex items-center space-x-2"
+              >
+                <GraduationCap className="w-4 h-4" />
+                <span>Teachers</span>
+              </Button>
+            </Link> */}
             <Link to="/quran">
               <Button
                 variant={isActive("/quran") ? "soft" : "ghost"}
@@ -50,6 +78,24 @@ const Navigation = () => {
               >
                 <Users className="w-4 h-4" />
                 <span>Hadith Program</span>
+              </Button>
+            </Link>
+            <Link to="/faq">
+              <Button
+                variant={isActive("/faq") ? "soft" : "ghost"}
+                className="flex items-center space-x-2"
+              >
+                <HelpCircle className="w-4 h-4" />
+                <span>FAQ</span>
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button
+                variant={isActive("/contact") ? "soft" : "ghost"}
+                className="flex items-center space-x-2"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Contact</span>
               </Button>
             </Link>
             <Button variant="hero" size="lg" className="ml-4">
@@ -85,6 +131,24 @@ const Navigation = () => {
                 Home
               </Button>
             </Link>
+            <Link to="/about" onClick={() => setIsOpen(false)}>
+              <Button
+                variant={isActive("/about") ? "soft" : "ghost"}
+                className="w-full justify-start"
+              >
+                <Info className="w-4 h-4 mr-2" />
+                About
+              </Button>
+            </Link>
+            <Link to="/teachers" onClick={() => setIsOpen(false)}>
+              <Button
+                variant={isActive("/teachers") ? "soft" : "ghost"}
+                className="w-full justify-start"
+              >
+                <GraduationCap className="w-4 h-4 mr-2" />
+                Teachers
+              </Button>
+            </Link>
             <Link to="/quran" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/quran") ? "soft" : "ghost"}
@@ -101,6 +165,24 @@ const Navigation = () => {
               >
                 <Users className="w-4 h-4 mr-2" />
                 Hadith Program
+              </Button>
+            </Link>
+            <Link to="/faq" onClick={() => setIsOpen(false)}>
+              <Button
+                variant={isActive("/faq") ? "soft" : "ghost"}
+                className="w-full justify-start"
+              >
+                <HelpCircle className="w-4 h-4 mr-2" />
+                FAQ
+              </Button>
+            </Link>
+            <Link to="/contact" onClick={() => setIsOpen(false)}>
+              <Button
+                variant={isActive("/contact") ? "soft" : "ghost"}
+                className="w-full justify-start"
+              >
+                <Phone className="w-4 h-4 mr-2" />
+                Contact
               </Button>
             </Link>
             <div className="pt-4">

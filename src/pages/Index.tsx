@@ -85,7 +85,8 @@ const Index = () => {
               <p className="text-xl text-muted-foreground max-w-xl">
                 Give your child the gift of authentic Islamic education in a
                 caring, child-friendly environment that nurtures both mind and
-                heart.
+                heart. We follow the methodologies of the pious predecessors and
+                teach based on the pure creed and teachings of Quran and Sunnah.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -108,20 +109,20 @@ const Index = () => {
                   rel="noopener noreferrer"
                 >
                   <Button variant="outline" size="lg">
-                    Book Free Consultation
+                    Book Free Trial
                   </Button>
                 </a>
               </div>
             </div>
 
             <div className="relative">
-              <div className="w-full h-96 lg:h-[500px] rounded-3xl overflow-hidden shadow-card bg-gradient-islamic p-8">
+              <div className="w-full h-96 lg:h-[500px] rounded-3xl overflow-hidden bg-gradient-to-tr p-8">
                 <div className="w-full h-full flex flex-col md:flex-row items-center justify-center gap-8">
                   <div className="flex-1 space-y-8">
                     <div className="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center">
                       <BookOpen className="w-12 h-12 text-primary" />
                     </div>
-                    <div className="text-primary-foreground">
+                    <div className="text-black">
                       <h3 className="text-2xl font-bold mb-2">
                         Quranic Learning
                       </h3>
@@ -137,21 +138,15 @@ const Index = () => {
                     <div className="w-24 h-24 bg-primary/10 rounded-2xl flex items-center justify-center">
                       <Scroll className="w-12 h-12 text-primary" />
                     </div>
-                    <div className="text-primary-foreground">
+                    <div className="text-black">
                       <h3 className="text-2xl font-bold mb-2">
-                        Islamic Education
+                        Hadith Studies
                       </h3>
                       <p className="opacity-90">
                         Building knowledge through authentic teachings
                       </p>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-islamic rounded-2xl flex items-center justify-center shadow-gold">
-                <div className="text-center text-primary-foreground">
-                  <div className="text-2xl font-bold">500+</div>
-                  <div className="text-sm">Happy Students</div>
                 </div>
               </div>
             </div>
@@ -187,7 +182,7 @@ const Index = () => {
                 </CardTitle>
                 <CardDescription className="text-base text-muted-foreground">
                   Beautiful recitation, memorization, and understanding with
-                  proper Tajweed
+                  proper Tajweed, following traditional methodologies
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -238,7 +233,8 @@ const Index = () => {
                 </CardTitle>
                 <CardDescription className="text-base text-muted-foreground">
                   Character building through beautiful teachings of Prophet
-                  Muhammad (PBUH)
+                  Muhammad, peace and blessings of Allah be upon him, following
+                  the understanding of the Salaf
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
@@ -286,7 +282,8 @@ const Index = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We combine traditional Islamic education with modern,
-              child-friendly teaching methods
+              child-friendly teaching methods, following the methodologies of
+              the pious predecessors
             </p>
           </div>
 
@@ -376,10 +373,10 @@ const Index = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
               >
                 <Users className="w-5 h-5 mr-2" />
-                Speak with Advisor
+                Speak with the Director
               </Button>
             </div>
           </div>

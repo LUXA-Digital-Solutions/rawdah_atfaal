@@ -95,7 +95,9 @@ const QuranProgram = () => {
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Master Quranic recitation with the proven Qāʿidah Nūrāniyyah
-              method in small, interactive classes with expert teachers.
+              method in small, interactive classes with expert teachers. We
+              teach based on authentic Islamic teachings and give great
+              importance to correct creed and methodology.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -135,7 +137,8 @@ const QuranProgram = () => {
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We combine traditional Islamic teaching methods with modern,
-              child-friendly approaches
+              child-friendly approaches, ensuring authentic Islamic education
+              based on correct creed and methodology
             </p>
           </div>
 
@@ -242,7 +245,8 @@ const QuranProgram = () => {
               <p className="text-lg text-muted-foreground">
                 We use the proven Qāʿidah Nūrāniyyah method combined with modern
                 teaching techniques to ensure effective learning and proper
-                Quranic recitation.
+                Quranic recitation. Our approach is rooted in authentic Islamic
+                teachings with great emphasis on correct creed and methodology.
               </p>
 
               <div className="space-y-4">
