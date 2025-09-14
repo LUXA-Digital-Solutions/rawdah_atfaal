@@ -155,7 +155,7 @@ const Contact = () => {
               className="animate-fade-up"
               style={{ animationDelay: "1.4s" }}
             >
-              View All FAQs
+              <a href="/faq">View All FAQs</a>
             </Button>
           </div>
         </div>
