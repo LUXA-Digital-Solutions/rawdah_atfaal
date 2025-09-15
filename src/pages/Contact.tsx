@@ -17,27 +17,33 @@ const Contact = () => {
       description: "Send us an email and we'll respond within 24 hours",
       contact: "markazulbayaan9@gmail.com",
       action: "Send Email",
+      href: "mailto:markazulbayaan9@gmail.com",
     },
     {
       icon: Phone,
       title: "Call Us",
-      description: "Speak directly with our enrollment specialist",
+      description:
+        "Speak directly with our enrollment specialist about your needs",
       contact: "+234 808 928 7065",
       action: "Call Now",
+      href: "tel:+2348089287065",
     },
     {
       icon: MessageSquare,
       title: "Live Chat",
-      description: "Chat with us instantly during business hours",
+      description:
+        "Chat with us instantly during business hours for quick help",
       contact: "Available 9 AM - 6 PM GMT",
       action: "Start Chat",
+      href: "https://bit.ly/rawdah-director",
     },
     {
       icon: Calendar,
       title: "Schedule Consultation",
-      description: "Book a free consultation with our education advisors",
+      description: "Book a free consultation with our education advisors today",
       contact: "30-minute sessions available",
       action: "Book Now",
+      href: "https://calendly.com/markazulbayaan9",
     },
   ];
 
@@ -94,9 +100,16 @@ const Contact = () => {
                   <div className="font-medium text-primary">
                     {method.contact}
                   </div>
-                  <Button variant="outline" size="sm" className="w-full">
-                    {method.action}
-                  </Button>
+                  <a
+                    href={method.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Button variant="outline" size="sm" className="w-full">
+                      {method.action}
+                    </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}

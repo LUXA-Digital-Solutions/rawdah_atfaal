@@ -283,13 +283,19 @@ const FAQ = () => {
                 </div>
                 <CardTitle className="text-lg">Live Chat</CardTitle>
                 <CardDescription>
-                  Chat with our support team instantly
+                  Chat with our support team instantly during business hours
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
-                  Start Chat
-                </Button>
+                <a
+                  href="https://bit.ly/rawdah-director"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" className="w-full">
+                    Start Chat
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
@@ -329,9 +335,15 @@ const FAQ = () => {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full">
-                  Book Now
-                </Button>
+                <a
+                  href="https://calendly.com/markazulbayaan9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="outline" className="w-full">
+                    Book Now
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>

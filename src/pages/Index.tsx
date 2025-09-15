@@ -88,7 +88,7 @@ const Index = () => {
                 heart. We follow the methodologies of the pious predecessors and
                 teach based on the pure creed and teachings of Quran and Sunnah.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col md:flex-row gap-4">
                 <a
                   href="https://bit.ly/rawdah-director"
                   target="_blank"
@@ -126,15 +126,15 @@ const Index = () => {
 
               <div className="w-full h-96 lg:h-[500px] rounded-3xl overflow-hidden bg-gradient-to-br from-blue-50/30 via-purple-50/20 to-pink-50/30 backdrop-blur-md border border-white/30 shadow-2xl p-8 relative">
                 <div className="w-full h-full flex flex-col md:flex-row items-center justify-center gap-8">
-                  <div className="flex-1 space-y-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                    <div className="w-28 h-28 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl flex items-center justify-center shadow-inner">
-                      <BookOpen className="w-14 h-14 text-primary drop-shadow-lg" />
+                  <div className="flex-1 md:space-y-8 space-y-4 bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div className="md:w-28 w-14 md:h-28 h-14 bg-gradient-to-br from-primary/20 to-primary/10 rounded-3xl flex items-center justify-center shadow-inner">
+                      <BookOpen className="md:w-14 w-8 md:h-14 h-8 text-primary drop-shadow-lg" />
                     </div>
                     <div className="text-black">
-                      <h3 className="text-2xl font-bold mb-3 text-foreground">
+                      <h3 className="text-xl md:text-2xl font-bold mb-2 text-foreground">
                         Quranic Learning
                       </h3>
-                      <p className="opacity-90 text-muted-foreground leading-relaxed">
+                      <p className="text-sm md:text-base opacity-90 text-muted-foreground leading-relaxed">
                         Mastering Tajweed and understanding the divine words
                       </p>
                     </div>
@@ -143,15 +143,15 @@ const Index = () => {
                   {/* Modern divider */}
                   <div className="hidden md:block w-1 h-48 bg-gradient-to-b from-primary/40 via-primary/20 to-primary/40 rounded-full shadow-lg"></div>
 
-                  <div className="flex-1 space-y-8 bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                    <div className="w-28 h-28 bg-gradient-to-br from-accent-coral/20 to-accent-yellow/10 rounded-3xl flex items-center justify-center shadow-inner">
-                      <Scroll className="w-14 h-14 text-primary drop-shadow-lg" />
+                  <div className="flex-1 md:space-y-8 space-y-4 bg-white/10 backdrop-blur-sm rounded-2xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                    <div className="md:w-28 w-14 md:h-28 h-14 bg-gradient-to-br from-accent-coral/20 to-accent-yellow/10 rounded-3xl flex items-center justify-center shadow-inner">
+                      <Scroll className="md:w-14 w-8 md:h-14 h-8 text-primary drop-shadow-lg" />
                     </div>
                     <div className="text-black">
-                      <h3 className="text-2xl font-bold mb-3 text-foreground">
+                      <h3 className="text-xl md:text-2xl font-bold mb-2 text-foreground">
                         Hadith Studies
                       </h3>
-                      <p className="opacity-90 text-muted-foreground leading-relaxed">
+                      <p className="text-sm md:text-base opacity-90 text-muted-foreground leading-relaxed">
                         Building knowledge through authentic teachings
                       </p>
                     </div>

@@ -10,8 +10,17 @@ import {
   Phone,
   HelpCircle,
   GraduationCap,
+  Bookmark,
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,33 +62,58 @@ const Navigation = () => {
                 <span>About</span>
               </Button>
             </Link>
-            {/* <Link to="/teachers">
-              <Button
-                variant={isActive("/teachers") ? "soft" : "ghost"}
-                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
-              >
-                <GraduationCap className="w-4 h-4" />
-                <span>Teachers</span>
-              </Button>
-            </Link> */}
-            <Link to="/quran">
-              <Button
-                variant={isActive("/quran") ? "soft" : "ghost"}
-                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
-              >
-                <BookOpen className="w-4 h-4" />
-                <span>Qur'an Program</span>
-              </Button>
-            </Link>
-            <Link to="/hadith">
-              <Button
-                variant={isActive("/hadith") ? "soft" : "ghost"}
-                className="flex items-center space-x-2 hover:scale-105 transition-all duration-200"
-              >
-                <Users className="w-4 h-4" />
-                <span>Hadith Program</span>
-              </Button>
-            </Link>
+
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger
+                    className={`${
+                      isActive("/quran") || isActive("/hadith")
+                        ? "bg-primary/10"
+                        : ""
+                    } hover:scale-105 transition-all duration-200`}
+                  >
+                    <GraduationCap className="w-4 h-4 mr-2" />
+                    Courses
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="grid gap-3 p-4 w-[400px]">
+                      <Link
+                        to="/quran"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      >
+                        <div className="flex items-center gap-2">
+                          <BookOpen className="w-4 h-4" />
+                          <div className="text-sm font-medium leading-none">
+                            Qur'an Program
+                          </div>
+                        </div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Learn proper Tajweed and Qur'an recitation with expert
+                          teachers
+                        </p>
+                      </Link>
+                      <Link
+                        to="/hadith"
+                        className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      >
+                        <div className="flex items-center gap-2">
+                          <Users className="w-4 h-4" />
+                          <div className="text-sm font-medium leading-none">
+                            Hadith Program
+                          </div>
+                        </div>
+                        <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                          Study authentic hadiths and build strong Islamic
+                          character
+                        </p>
+                      </Link>
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+
             <Link to="/faq">
               <Button
                 variant={isActive("/faq") ? "soft" : "ghost"}
@@ -140,33 +174,32 @@ const Navigation = () => {
                 About
               </Button>
             </Link>
-            <Link to="/teachers" onClick={() => setIsOpen(false)}>
-              <Button
-                variant={isActive("/teachers") ? "soft" : "ghost"}
-                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
-              >
-                <GraduationCap className="w-4 h-4 mr-2" />
-                Teachers
-              </Button>
-            </Link>
-            <Link to="/quran" onClick={() => setIsOpen(false)}>
-              <Button
-                variant={isActive("/quran") ? "soft" : "ghost"}
-                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
-              >
-                <BookOpen className="w-4 h-4 mr-2" />
-                Qur'an Program
-              </Button>
-            </Link>
-            <Link to="/hadith" onClick={() => setIsOpen(false)}>
-              <Button
-                variant={isActive("/hadith") ? "soft" : "ghost"}
-                className="w-full justify-start hover:bg-primary/10 transition-all duration-200"
-              >
-                <Users className="w-4 h-4 mr-2" />
-                Hadith Program
-              </Button>
-            </Link>
+            <div className="space-y-1 px-2">
+              <div className="px-3 py-1">
+                <div className="text-sm font-medium text-muted-foreground flex items-center">
+                  <GraduationCap className="w-4 h-4 mr-2" />
+                  Courses
+                </div>
+              </div>
+              <Link to="/quran" onClick={() => setIsOpen(false)}>
+                <Button
+                  variant={isActive("/quran") ? "soft" : "ghost"}
+                  className="w-full justify-start hover:bg-primary/10 transition-all duration-200 pl-6"
+                >
+                  <BookOpen className="w-4 h-4 mr-2" />
+                  Qur'an Program
+                </Button>
+              </Link>
+              <Link to="/hadith" onClick={() => setIsOpen(false)}>
+                <Button
+                  variant={isActive("/hadith") ? "soft" : "ghost"}
+                  className="w-full justify-start hover:bg-primary/10 transition-all duration-200 pl-6"
+                >
+                  <Users className="w-4 h-4 mr-2" />
+                  Hadith Program
+                </Button>
+              </Link>
+            </div>
             <Link to="/faq" onClick={() => setIsOpen(false)}>
               <Button
                 variant={isActive("/faq") ? "soft" : "ghost"}
