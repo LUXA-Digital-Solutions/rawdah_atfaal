@@ -10,7 +10,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <img
-                src="/src/assets/rawdah_logo2.jpg"
+                src="/rawdah_logo2.jpg"
                 alt="Rawdah Logo"
                 className="w-10 h-10 rounded-xl shadow-soft"
               />
