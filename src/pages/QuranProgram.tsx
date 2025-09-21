@@ -128,12 +128,12 @@ const QuranProgram = () => {
                 </Button>
               </a>
               <a
-                href="https://bit.ly/rawdah-director"
+                href="https://docs.google.com/document/d/1J0MkKcpnumZBqoy4Cxv9R88Ko1d-w33VmVD1uE6VHZI/edit?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button variant="outline" size="lg">
-                  Download Syllabus
+                  View Syllabus
                 </Button>
               </a>
             </div>

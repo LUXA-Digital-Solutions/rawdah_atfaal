@@ -141,7 +141,7 @@ const HadithProgram = () => {
                 Reserve Your Slot Now
               </Button>
               <Button variant="outline" size="lg">
-                Download Course Details
+                View Course Details
               </Button>
             </div>
           </div>

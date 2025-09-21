@@ -228,6 +228,22 @@ const HadithProgram = () => {
               </Card>
             ))}
           </div>
+
+          <div
+            className="text-center mt-12 animate-fade-up"
+            style={{ animationDelay: "2.4s" }}
+          >
+            <a
+              href="https://docs.google.com/document/d/1thbTNcNbh_vHOCsm13ya8bFEpVRBaPpnmkLwMqNJMrU/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg">
+                <BookOpen className="w-5 h-5 mr-2" />
+                View Syllabus
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
