@@ -18,7 +18,6 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
-import heroImage from "@/assets/hero-image.jpg";
 import quranIcon from "@/assets/quran-icon.jpg";
 import hadithIcon from "@/assets/hadith-icon.jpg";
 
