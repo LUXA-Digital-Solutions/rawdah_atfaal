@@ -128,12 +128,13 @@ const QuranProgram = () => {
                 </Button>
               </a>
               <a
-                href="https://docs.google.com/document/d/1J0MkKcpnumZBqoy4Cxv9R88Ko1d-w33VmVD1uE6VHZI/edit?usp=sharing"
+                href="https://bit.ly/rawdah-director"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Button variant="outline" size="lg">
-                  View Syllabus
+                  <Users className="w-5 h-5 mr-2" />
+                  Speak with the Director
                 </Button>
               </a>
             </div>

@@ -395,18 +395,30 @@ const Index = () => {
               environment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg" className="shadow-gold">
-                <BookOpen className="w-5 h-5 mr-2" />
-                Schedule Free Trial
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
+              <a
+                href="https://calendly.com/markazulbayaan9"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Users className="w-5 h-5 mr-2" />
-                Speak with the Director
-              </Button>
+                <Button variant="secondary" size="lg" className="shadow-gold">
+                  <BookOpen className="w-5 h-5 mr-2" />
+                  Schedule Free Trial
+                </Button>
+              </a>
+              <a
+                href="https://bit.ly/rawdah-director"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-primary-foreground text-black hover:bg-primary-foreground hover:text-primary"
+                >
+                  <Users className="w-5 h-5 mr-2" />
+                  Speak with the Director
+                </Button>
+              </a>
             </div>
           </div>
         </div>
