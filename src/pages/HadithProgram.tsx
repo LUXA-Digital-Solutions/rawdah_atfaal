@@ -400,10 +400,17 @@ const HadithProgram = () => {
                     </div>
                   </div>
                   <div className="pt-4">
-                    <Button variant="outline" className="w-full">
-                      <Scroll className="w-5 h-5 mr-2" />
-                      Choose Monthly
-                    </Button>
+                    <a
+                      href="https://wa.link/lvp5la"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button variant="outline" className="w-full">
+                        <Scroll className="w-5 h-5 mr-2" />
+                        Choose Monthly
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
@@ -456,10 +463,17 @@ const HadithProgram = () => {
                     </div>
                   </div>
                   <div className="pt-4">
-                    <Button variant="program" className="w-full">
-                      <Scroll className="w-5 h-5 mr-2" />
-                      Secure Your Spot Now
-                    </Button>
+                    <a
+                      href="https://wa.link/lvp5la"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
+                    >
+                      <Button variant="program" className="w-full">
+                        <Scroll className="w-5 h-5 mr-2" />
+                        Secure Your Spot Now
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
