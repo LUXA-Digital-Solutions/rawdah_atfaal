@@ -151,9 +151,16 @@ const Navigation = () => {
                   <span>Contact</span>
                 </Button>
               </Link>
-              <Button variant="hero" size="lg" className="ml-4">
-                Enroll Now
-              </Button>
+              <a
+                href="https://bit.ly/rawdah-director"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-muted-foreground hover:text-primary hover:translate-x-1 transition-all duration-200"
+              >
+                <Button variant="hero" size="lg" className="ml-4">
+                  Enroll Now
+                </Button>
+              </a>
             </div>
 
             {/* Mobile menu button */}
